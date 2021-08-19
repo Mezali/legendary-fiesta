@@ -1,2 +1,4 @@
 # legendary-fiesta
-repository for DS class
+
+Repositorio para a aula de DS
+
