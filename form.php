@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<h1 class="container-fluid">Formulários</h1>
+<div class="titulo">Formulários</div>
 
 <?php
 
@@ -43,7 +43,7 @@
     }
 ?>
 
-<h2 class="container-fluid">Cadastro</h2>
+<h2>Cadastro</h2>
 
 <?php foreach($erros as $erro): ?>
     <div class="alert alert-danger" role="alert">
@@ -51,7 +51,7 @@
     </div>
 <?php endforeach ?>
 
-<form action="#" method="post">
+<form action="/insert.php" method="post">
     <div class="form-row">
         <div class="form-group col-md-8">
             <label for="nome">Nome</label>
@@ -91,5 +91,5 @@
         </div>
     </div>
 
-    <button class="btn btn-primary btn-xl">Enviar</button>
+    <button class="btn btn-primary btn-lg">Enviar</button>
 </form>
