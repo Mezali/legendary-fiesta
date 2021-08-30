@@ -19,7 +19,7 @@
                     <h3 class="title has-text-grey">Cadastro</h3>
                 </div>
                 <div class="box">
-                    <form action="conexao.php" method="POST">
+                    <form action="InsertShow.php" method="POST">
                         <div class="field">
                             <div class="control">
                                 <input name="nome" name="text" class="input is-large" placeholder="nome" autofocus="">
