@@ -22,7 +22,7 @@
                     <form action="conexao.php" method="POST">
                         <div class="field">
                             <div class="control">
-                                <input name="usuario" name="text" class="input is-large" placeholder="Nome" autofocus="">
+                                <input name="nome" name="text" class="input is-large" placeholder="nome" autofocus="">
                             </div>
                         </div>
 
