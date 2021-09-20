@@ -30,7 +30,7 @@
 
                     <div class="form-group">
                         <label><mark>Nome</mark></label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="password" class="form-control" id="nome" placeholder="Insira o seu Nome">
                     </div>
 
                     <div class="form-group">
@@ -39,17 +39,17 @@
                     </div>
                     <div class="form-group">
                         <label>rua</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="text" class="form-control" id="rua" placeholder="Insira a sua Rua">
                     </div>
 
                     <div class="form-group">
                         <label>Numero</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="number" class="form-control" id="numero" placeholder="Insira o numero da sua casa">
                     </div>
 
                     <div class="form-group">
                         <label>Bairro</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="text" class="form-control" id="bairro" placeholder="Password">
                     </div>
 
                     <div class="form-group">
@@ -87,7 +87,7 @@
         <div class="col p-2">
             <h2 class="p-5 bg-info">Veiculos</h2>
             <div class="">
-                <form action="conexao.php" method="POST">
+                <form action="veiculos.php" method="POST">
                     <div class="form-group">
                         <label for="exampleInputEmail1"></label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -113,7 +113,7 @@
         <div class="col p-2">
             <h2 class="p-5 bg-info">Funcionario</h2>
             <div class="">
-                <form action="conexao.php" method="POST">
+                <form action="funcionarios.php" method="POST">
                     <div class="form-group">
                         <label for="exampleInputEmail1"></label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
