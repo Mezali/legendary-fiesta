@@ -1,17 +1,25 @@
 <?php
 
-$server = "localhost";
-$user = "root";
-$password = "";
-$bank = "banco";
+define('HOST', 'localhost'); //PROFESSOR, LEMBRE-SE DE TROCAR OS DADOS
+define('USER', 'root');
+define('PASSWORD', '');
+define('DB', 'banco');
 
-$conection = mysqli_connect($server,$user,$password,$bank) or die (">:V não consegui me conectar ao banco!");
+$conn = mysqli_connect(HOST, USER, PASSWORD, DB) or die("Não foi possivel conectar-se ao banco de dados!");
 
+$sql = "SELECT * FROM user";
 
-$usuario = $_POST['usuario'];
-$senha = md5($_POST['senha']);
+$user = $_POST['usuario'];
+$password = md5($_POST['password']);
 
-$search = "SELECT * FROM user WHERE usuario = '$usuario'";
+$search = "SELECT * FROM user WHERE nome = '$user' AND senha = '$password'";
 
-$result = mysqli_query()
-?>
+$data = mysqli_query($conn, $search) or die("não foi possivel achar os dados >:(");
+
+if (mysqli_num_rows($data) <= 0) {
+    echo "Usuario não cadastrado";
+} else {
+    echo "Usuario cadastrado";
+};
+
+echo '<a href="index.html">Voltar!</a>';
